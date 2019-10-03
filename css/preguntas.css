@@ -1,0 +1,242 @@
+body{
+  background-color: rgb(212, 248, 239);
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: table;
+  font-family: 'Manjari', sans-serif;
+}
+
+
+
+header{
+background:rgba(75, 138, 233, 0.76) ;
+}
+header ul{
+padding: 0;
+margin: 0;
+list-style-type: none;
+position: absolute;
+z-index: 20;
+}
+header li{
+display: inline-block;
+float: left;
+margin-right: 1px;
+}
+header li a{
+display: block;
+min-width: 140px;
+height: 50px;
+text-align: center;
+line-height: 50px;
+font-family: helvetica;
+color: #fff;
+background:rgba(75, 138, 233, 0.76);
+text-decoration: none;
+}
+header li:hover a{
+background: rgb(86, 164, 228);
+}
+header li:hover ul li a{
+background: #f3f3f3;
+color: #2f3036;
+height: 40px;
+line-height: 40px;
+}
+header li:hover ul li a:hover{
+background: rgba(1, 103, 255, 0.651);
+color: #fff;
+}
+header li ul{
+display: none;
+}
+header li ul li{
+display: block;
+float: none;
+}
+header li ul li a{
+width: auto;
+min-width: 100px;
+padding: 0 20px;
+transition: 0.3s;
+}
+header ul li a:hover + .hidden, .hidden:hover{
+display: block;
+}
+input[type=checkbox]{
+display: none;
+}
+input[type=checkbox]:checked ~ #menu{
+display: block;
+}
+.show-menu{
+font-family: helvetica;
+text-decoration: none;
+color: #fff;
+background: rgba(50, 97, 168, 0.856);
+text-align: center;
+padding: 10px 0;
+display: none;
+}
+
+header li:hover ul li ul li a{
+background: #f3f3f3;
+color: #2f3036;
+height: 40px;
+line-height: 40px;
+}
+header li:hover ul li ul li a:hover{
+background: rgba(1, 103, 255, 0.651);
+color: #fff;
+}
+
+header li ul li ul li{
+display: block;
+float: none;
+}
+header li ul li ul li a{
+width: auto;
+min-width: 100px;
+padding: 0 20px;
+transition: 0.3s;
+}
+
+header ul li ul li a:hover + .hidden, .hidden:hover{
+display: block;
+}
+.buscar{
+padding: 5;
+justify-content: center;
+text-align: center;
+}
+.buscar input{
+margin-left: 10px;
+padding: 10px;
+width: 260px;
+height: 15px;
+}
+.buscar button{
+padding: 10px;
+border: solid 0px white;
+background: rgba(1, 103, 255, 0.651);
+}
+.buscar button:hover{
+background:rgba(50, 97, 168, 0.856);
+}
+
+
+
+
+
+.titu{
+  margin-top:100px;
+  margin-bottom: 40px;
+}
+.containerrs{
+  padding: 4px;
+  margin: 4px;
+  width: 700px;
+  height: 100px;
+  display: table-cell;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.containerrs .card{
+  position: relative;
+  background:rgb(212, 248, 239);
+  box-sizing: border-box;
+}
+.containerrs .card .face {
+  margin: 0;
+  width: 98%;
+  transition: 0.5s;
+  height: 80px;
+  box-sizing: border-box;
+}
+.containerrs .card .face.face1{
+  padding: 5px;
+  margin: 5px;
+  background: #28c3d4;
+  display:flex;
+  z-index: 1;
+  transform: translateY(75px);
+  box-sizing: border-box;
+}
+.containerrs .card:hover .face.face1{
+  background: #ff00c8;
+  transform: translateY(10px);
+  box-sizing: border-box;
+}
+.containerrs .card .face.face1 .content{
+  opacity: 0.7;
+  transition: 0.5s;
+  padding: 0;
+  box-sizing: border-box;
+}
+.containerrs .card:hover .face.face1 .content{
+  opacity: 1;
+  box-sizing: border-box;
+}
+.containerrs .card .face.face1 .content h3{
+  margin: auto;
+  padding: 25px 10px;
+  color: black;
+  text-align: center;
+  font-size: 1.5em;
+  box-sizing: border-box;
+}
+.containerrs .card .face.face2{
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: auto;
+  box-sizing: border-box;
+  transform: translateY(-10px);
+}
+.containerrs .card:hover .face.face2{
+  transform: translateY(0px);
+  box-sizing: border-box;
+
+}
+.containerrs .card .face.face2 p{
+  margin: 8px;
+  padding: 3px;
+  width: 90%;
+  height: 90%;
+  box-sizing: border-box;
+}
+.footerr{
+  text-align: center;
+  margin-top:30px;
+  padding-top:15px;
+  padding-bottom:10px;
+  color:white;
+  background-color:rgb(30, 30, 87);
+  box-sizing: border-box;
+  border-radius: 10px
+}
+
+
+
+
+@media (max-width:768){
+  header ul{
+    position: absolute;
+    display: none;
+    z-index: 2;
+    width: 100%;
+  }
+  header li{
+    margin-bottom: 1px;
+  }
+  header ul li, li a{
+    width: 100%;
+  }
+  .show-menu{
+    display: block;
+  }
+}

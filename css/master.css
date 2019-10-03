@@ -1,0 +1,257 @@
+*{
+  padding: 0;
+  margin: 0;
+  /*Tipo de letra*/
+  font-family: 'Manjari', sans-serif;
+}
+
+
+
+header{
+  background:rgba(75, 138, 233, 0.76) ;
+}
+header ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: absolute;
+  z-index: 20;
+}
+header li{
+  display: inline-block;
+  float: left;
+  margin-right: 1px;
+}
+header li a{
+  display: block;
+  min-width: 140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: helvetica;
+  color: #fff;
+  background:rgba(75, 138, 233, 0.76);
+  text-decoration: none;
+}
+header li:hover a{
+  background: rgb(86, 164, 228);
+}
+header li:hover ul li a{
+  background: #f3f3f3;
+  color: #2f3036;
+  height: 40px;
+  line-height: 40px;
+}
+header li:hover ul li a:hover{
+  background: rgba(1, 103, 255, 0.651);
+  color: #fff;
+}
+header li ul{
+  display: none;
+}
+header li ul li{
+  display: block;
+  float: none;
+}
+header li ul li a{
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+  transition: 0.3s;
+}
+header ul li a:hover + .hidden, .hidden:hover{
+  display: block;
+}
+input[type=checkbox]{
+  display: none;
+}
+input[type=checkbox]:checked ~ #menu{
+  display: block;
+}
+.show-menu{
+  font-family: helvetica;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(50, 97, 168, 0.856);
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+}
+
+header li:hover ul li ul li a{
+  background: #f3f3f3;
+  color: #2f3036;
+  height: 40px;
+  line-height: 40px;
+}
+header li:hover ul li ul li a:hover{
+  background: rgba(1, 103, 255, 0.651);
+  color: #fff;
+}
+
+header li ul li ul li{
+  display: block;
+  float: none;
+}
+header li ul li ul li a{
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+  transition: 0.3s;
+}
+
+header ul li ul li a:hover + .hidden, .hidden:hover{
+  display: block;
+}
+.buscar{
+  padding: 5;
+  justify-content: center;
+  text-align: center;
+}
+.buscar input{
+  margin-left: 10px;
+  padding: 18px;
+  width: 260px;
+  height: 15px;
+}
+.buscar button{
+  padding: 10px;
+  border: solid 0px white;
+  background: rgba(1, 103, 255, 0.651);
+  color:white;
+}
+.buscar button:hover{
+  background:rgba(50, 97, 168, 0.856);
+}
+
+
+
+
+
+.backgr{
+  width: 50px;
+  height: 50px;
+  background:#8bbabb;
+}
+.caja {
+  margin: 0;
+  padding: 0;
+  top:140px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  max-width: 400px;
+  height: auto;
+  position: relative;
+  box-shadow: -4px 4px 20px;
+  border:inset 3px #28c3d4;
+  border-radius:15px ;
+}
+.formulario{
+  align-items: center;
+  text-align: center;
+}
+.formulario input {
+  margin-top: 30px;
+  width: 230px;
+  padding: 5px;
+  border-top: solid 0px;
+  border-right: solid 0px;
+  border-left: solid 0px;
+}
+.boton {
+  margin-top: 14px;
+  padding: 15px;
+  width: 220px;
+  border: solid 0px;
+  background-color: #28c3d4;
+  color: white;
+  transition: 0.6s;
+  font-size: 20px;
+}
+.boton:hover{
+  background-color: #ff00c8;
+}
+.caja h2{
+  text-align: center;
+  margin-top: 8px;
+  font-size: 40px;
+}
+.categ{
+  max-width: 400px;
+  max-height: 100px;
+  margin-left: 10px;
+  position: relative;
+  top: 140px;
+  border:solid 0px;
+  box-shadow: 0px 0px 10px;
+}
+.cajita {
+  max-width: 100px;
+  height: auto;
+  position: relative;
+  display: block;
+}
+.cajita img{
+  left: 0px;
+  position: absolute;
+  max-width:100px;
+  max-height: 100px;
+  border-right: solid 1px black;
+  padding-right: 16px;
+  margin-left: 4px;
+}
+
+.categoria {
+  margin-right: 100px;
+  max-width: 280px;
+  max-height: 100px;
+  left: 120px;
+  position: relative;
+  display: block;
+}
+.categoria h4{
+  text-align: center;
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.categoria ul li {
+  list-style: none;
+}
+.categoria ul li a{
+  text-decoration: none;
+  color: black;
+  margin-left: 17px;
+  font-size: 13px;
+}
+.lista-categ {
+  right: 40px;
+}
+
+
+
+@media (max-width:768){
+  .caja{
+    margin-left: 40px;
+  }
+  .categ{
+    margin-left: 30px;
+  }
+
+  header ul{
+    position: absolute;
+    display: none;
+    z-index: 2;
+  }
+  header li{
+    margin-bottom: 1px;
+  }
+  header ul li, li a{
+    width: 100%;
+  }
+  .show-menu{
+    display: block;
+  }
+}
